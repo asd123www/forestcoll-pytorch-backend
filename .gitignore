@@ -1,0 +1,3 @@
+*.so
+build/*
+Dummy_Collectives.egg-info/*
