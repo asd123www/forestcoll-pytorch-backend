@@ -1,3 +1,19 @@
+## conda environment
+
+```
+conda create -n zezhou-pytorch-test python=3.12.9
+conda activate zezhou-pytorch-test
+pip install torch --index-url https://download.pytorch.org/whl/rocm6.2
+pip install numpy
+```
+
+Then running `python3 -c "import torch; print(torch.__version__); print(torch.cuda.is_available())"` should print:
+
+```
+2.5.1+rocm6.2
+True
+```
+
 ## Build
 
 ```python setup.py develop```
